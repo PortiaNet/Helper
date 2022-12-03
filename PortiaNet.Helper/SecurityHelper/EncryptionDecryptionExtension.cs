@@ -1,4 +1,6 @@
-﻿namespace PortiaNet.Helper.SecurityHelper
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace PortiaNet.Helper.SecurityHelper
 {
     public static class EncryptionDecryptionExtension
     {
