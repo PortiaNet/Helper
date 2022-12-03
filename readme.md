@@ -99,7 +99,7 @@ There is another static helper class inside this file to decrease the pagination
 
 ``` csharp
 public Task<PaginationModel<StateViewModel>> GetStatesAsync(string filter, string? countryId, int pageIndex = 1, int pageSize = 10000)
-    => StaticMethods.GetPaginationAsync(_context.States.Include(f => f.Country)
+    => PaginationHelper.GetPaginationAsync(_context.States.Include(f => f.Country)
         .Where(f => !f.IsDeleted && !f.Country.IsDeleted),
         query =>
         {

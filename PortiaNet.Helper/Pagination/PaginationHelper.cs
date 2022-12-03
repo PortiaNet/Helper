@@ -1,60 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace PortiaNet.Helper
+namespace PortiaNet.Helper.Pagination
 {
-    public class PaginationModel
-    {
-        public int TotalRecords { get; set; }
-
-        public int FilteredRecords { get; set; }
-
-        public int PageIndex { get; set; }
-
-        public int PageSize { get; set; }
-
-        public int CurrentPageRecordsCount { get; protected set; }
-    }
-
-    public interface ISelectableModel
-    {
-        bool IsSelected { get; set; }
-    }
-
-    public class PaginationModel<T> : PaginationModel
-    {
-        private List<T> _items = new();
-        public List<T> Items
-        {
-            get => _items;
-            set
-            {
-                _items = value;
-                if (value == null)
-                    CurrentPageRecordsCount = 0;
-                else
-                    CurrentPageRecordsCount = value.Count;
-            }
-        }
-    }
-
-    public class SelectablePaginationModel<T> : PaginationModel
-        where T : ISelectableModel
-    {
-        private List<T> _items = new();
-        public List<T> Items
-        {
-            get => _items;
-            set
-            {
-                _items = value;
-                if (value == null)
-                    CurrentPageRecordsCount = 0;
-                else
-                    CurrentPageRecordsCount = value.Count;
-            }
-        }
-    }
-
     public static class PaginationHelper
     {
         public static async Task<PaginationModel<T>> GetPaginationAsync<T, K>(IQueryable<K> allData,
