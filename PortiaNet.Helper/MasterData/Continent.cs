@@ -13,6 +13,6 @@
             new Continent { RefNo = "07", Name = "Antarctica" }
         };
 
-        public List<Continent> GetAll() => Continents;
+        public static List<Continent> GetAll() => Continents;
     }
 }
