@@ -128,8 +128,8 @@
                 new Country() { Name = "Kazakhstan", Code = "KAZ", RefNo = "116"},
                 new Country() { Name = "Kenya", Code = "KEN", RefNo = "117"},
                 new Country() { Name = "Kiribati", Code = "KIR", RefNo = "118"},
-                new Country() { Name = "Korea (the Democratic People's Republic of)", Code = "PRK", RefNo = "119"},
-                new Country() { Name = "Korea (the Republic of)", Code = "KOR", RefNo = "120"},
+                new Country() { Name = "North Korea (the Democratic People's Republic of)", Code = "PRK", RefNo = "119"},
+                new Country() { Name = "South Korea (the Republic of)", Code = "KOR", RefNo = "120"},
                 new Country() { Name = "Kuwait", Code = "KWT", RefNo = "121"},
                 new Country() { Name = "Kyrgyzstan", Code = "KGZ", RefNo = "122"},
                 new Country() { Name = "Lao People's Democratic Republic (the)", Code = "LAO", RefNo = "123"},
@@ -258,7 +258,7 @@
                 new Country() { Name = "Western Sahara", Code = "ESH", RefNo = "246"},
                 new Country() { Name = "Yemen", Code = "YEM", RefNo = "247"},
                 new Country() { Name = "Zambia", Code = "ZMB", RefNo = "248"},
-                new Country() { Name = "Zimbabwe", Code = "ZWE", RefNo = "249" }
+                new Country() { Name = "Zimbabwe", Code = "ZWE", RefNo = "249" },
         };
 
         public static List<Country> GetAll() => Countries;
