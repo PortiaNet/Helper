@@ -28,7 +28,7 @@ namespace System
             return attribute == null ? enumValue.ToString() : attribute.Name ?? "";
         }
 
-        private static IDictionary<int, string> GetEnumValueNames(Type type)
+        public static IDictionary<int, string> GetEnumValueNames(Type type)
         {
             var names = type.GetFields(BindingFlags.Public | BindingFlags.Static)
                 .Select(f => f.GetCustomAttribute<DisplayAttribute>()?.Name ?? f.Name);
