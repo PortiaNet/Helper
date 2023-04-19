@@ -11,6 +11,7 @@ This part contains some master information which doesn't change too much. Curren
 * Country
 * Currency
 * Language
+* TimeZone
 
 ### How To Use
 
