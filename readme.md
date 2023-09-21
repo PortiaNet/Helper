@@ -12,6 +12,7 @@ This part contains some master information which doesn't change too much. Curren
 * Currency
 * Language
 * TimeZone
+* Region
 
 ### How To Use
 
@@ -25,7 +26,7 @@ var countries = Country.GetAll();
 
 ## Security Helper
 
-This helper provides the functionality to inject the encription and decription functions to any class. It gets the Enc/Dec key in the configuration provides the encryption and decryption using AES128 algorythm.
+This helper provides the functionality to inject the encryption and decryption functions into any class using the AES128 algorithm.
 
 ### How To Use
 
