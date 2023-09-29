@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/PortiaNet/Helper</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageTags>.Net; Helper; Tools; Class Library; .Net 6; .Net 7</PackageTags>
-    <Version>1.4.0</Version>
+    <Version>1.4.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
