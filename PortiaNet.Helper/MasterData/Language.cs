@@ -70,7 +70,7 @@
             new Language { RefNo = "062", Code = "lg-UG", Name = "Ganda" },
             new Language { RefNo = "063", Code = "gez-ER", Name = "Geez" },
             new Language { RefNo = "064", Code = "ka-GE", Name = "Georgian" },
-            new Language { RefNo = "065", Code = "de-LU", Name = "German" },
+            new Language { RefNo = "065", Code = "de-DE", Name = "German" },
             new Language { RefNo = "066", Code = "el-GR", Name = "Greek" },
             new Language { RefNo = "067", Code = "gn-PY", Name = "Guarani" },
             new Language { RefNo = "068", Code = "gu-IN", Name = "Gujarati" },
