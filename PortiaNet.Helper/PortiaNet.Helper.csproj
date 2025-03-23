@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -12,8 +12,8 @@
     <PackageIcon>settings.png</PackageIcon>
     <RepositoryUrl>https://github.com/PortiaNet/Helper</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <PackageTags>.Net; Helper; Tools; Class Library; .Net 6; .Net 7</PackageTags>
-    <Version>1.4.4</Version>
+    <PackageTags>.Net; Helper; Tools; Class Library; .Net 9</PackageTags>
+    <Version>1.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
   </ItemGroup>
 
 </Project>
