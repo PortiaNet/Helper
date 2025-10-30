@@ -37,7 +37,7 @@ namespace PortiaNet.Helper.SecurityHelper
             }
         }
 
-        private static string Encrypt(string textToEncrypt, string key)
+        public static string Encrypt(string textToEncrypt, string key)
         {
             using var aes = Aes.Create();
 
@@ -46,9 +46,9 @@ namespace PortiaNet.Helper.SecurityHelper
             aes.Mode = CipherMode.CBC;
             aes.Padding = PaddingMode.PKCS7;
 
-            byte[] pwdBytes = Encoding.UTF8.GetBytes(key);
-            byte[] keyBytes = new byte[16];
-            int len = pwdBytes.Length;
+            var pwdBytes = Encoding.UTF8.GetBytes(key);
+            var keyBytes = new byte[16];
+            var len = pwdBytes.Length;
             if (len > keyBytes.Length)
             {
                 len = keyBytes.Length;
@@ -56,13 +56,13 @@ namespace PortiaNet.Helper.SecurityHelper
             Array.Copy(pwdBytes, keyBytes, len);
             aes.Key = pwdBytes;
             aes.IV = keyBytes;
-            ICryptoTransform transform = aes.CreateEncryptor();
-            byte[] plainText = Encoding.UTF8.GetBytes(textToEncrypt);
+            var transform = aes.CreateEncryptor();
+            var plainText = Encoding.UTF8.GetBytes(textToEncrypt);
 
             return Convert.ToBase64String(transform.TransformFinalBlock(plainText, 0, plainText.Length));
         }
 
-        private static string Decrypt(string textToDecrypt, string key)
+        public static string Decrypt(string textToDecrypt, string key)
         {
             using var aes = Aes.Create();
 
@@ -71,10 +71,10 @@ namespace PortiaNet.Helper.SecurityHelper
             aes.Mode = CipherMode.CBC;
             aes.Padding = PaddingMode.PKCS7;
 
-            byte[] encryptedData = Convert.FromBase64String(textToDecrypt);
-            byte[] pwdBytes = Encoding.UTF8.GetBytes(key);
-            byte[] keyBytes = new byte[16];
-            int len = pwdBytes.Length;
+            var encryptedData = Convert.FromBase64String(textToDecrypt);
+            var pwdBytes = Encoding.UTF8.GetBytes(key);
+            var keyBytes = new byte[16];
+            var len = pwdBytes.Length;
             if (len > keyBytes.Length)
             {
                 len = keyBytes.Length;
@@ -82,7 +82,7 @@ namespace PortiaNet.Helper.SecurityHelper
             Array.Copy(pwdBytes, keyBytes, len);
             aes.Key = pwdBytes;
             aes.IV = keyBytes;
-            byte[] plainText = aes.CreateDecryptor().TransformFinalBlock(encryptedData, 0, encryptedData.Length);
+            var plainText = aes.CreateDecryptor().TransformFinalBlock(encryptedData, 0, encryptedData.Length);
             return Encoding.UTF8.GetString(plainText);
         }
     }

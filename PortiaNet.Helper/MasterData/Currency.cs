@@ -153,7 +153,6 @@
             new Currency { RefNo = "145", Code = "UAH", Name = "Ukrainian Hryvnia" },
             new Currency { RefNo = "146", Code = "UGX", Name = "Uganda Shilling" },
             new Currency { RefNo = "147", Code = "USD", Name = "US Dollar" },
-            new Currency { RefNo = "148", Code = "USS", Name = "US Dollar r (Same day)" },
             new Currency { RefNo = "149", Code = "UYU", Name = "Uruguayan Peso" },
             new Currency { RefNo = "150", Code = "UZS", Name = "Uzbekistan Sum" },
             new Currency { RefNo = "151", Code = "VEF", Name = "Venezuelan Bolívar" },
