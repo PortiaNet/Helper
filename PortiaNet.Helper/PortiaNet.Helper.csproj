@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/PortiaNet/Helper</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageTags>.Net; Helper; Tools; Class Library; AI; Vision; OCR; Card Recognition; Business Card; Credit Card; ML; ONNX; EF; EF Core; Encryption; Decryption; Cypher; AES;</PackageTags>
-    <Version>2.0</Version>
+    <Version>2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
