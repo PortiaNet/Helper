@@ -575,7 +575,7 @@ A: Use `GetPaginationAsync()` with async delegates for filter, sort, and mapping
 
 ## License
 
-[Your License Here]
+This project is licensed under the MIT License. See LICENSE.txt for details.
 
 ## Contributing
 
